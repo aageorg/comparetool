@@ -7,7 +7,7 @@ and [altclient](http://github.com/aageorg/altclient) for easy access to ALT Linu
 ## Installation and Usage
 Download package from github and build id:
 ```
-$ git clone github.com/aageorg/altclient
+$ git clone github.com/aageorg/comparetool
 $ cd comparetool
 $ go build -o compare
 ```
