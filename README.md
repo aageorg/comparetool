@@ -67,6 +67,22 @@ Layout is an array with two objects representing lists of missing and obsolete p
   }
 ]
 ```
+Example:
+```
+$ ./compare p10 p9 | more
+Downloading of package list from branch p9 is started
+Downloading of package list from branch p10 is started
+Packages list from branch p10 is downloaded
+Packages list from branch p9 is downloaded
+Search of missing and obsolete packages in branch p9 is started
+Search of missing packages in branch p10 is finished
+Search of missing and obsolete packages in branch p9 is finished
+[{"branch":"p10","missing":{"aarch64":[{"name":"python3-module-utmp","epoch":0,"version":"0.8","release":"alt1.1.1","arch":"aarch64","disttag":"sisyphus+2256
+25.17300.91.1","buildtime":1555309208,"source":"python-module-utmp"},{"name":"cairo-dock-GMenu","epoch":0,"version":"3.4.1","release":"alt13","arch":"aarch64
+","disttag":"sisyphus+228347.1400.1.2","buildtime":1556568828,"source":"cairo-dock-plugins"}...
+```
+
+Use flag `-q` if you want to get output without additional messages
 
 ## Issues and Contributing
 If you find an issue with this library, please report an issue. If you'd like, we welcome any contributions. Fork this library and submit a pull request.
