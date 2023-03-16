@@ -91,6 +91,7 @@ func main() {
 	go func() {
 		defer wg.Done()
 		archs := branch1.GetArchs()
+		PrintInfo("Searching of missing and obsolete packages in branch " + args[0] + "...")
 		for _, a := range archs {
 			d1.Missing[a] = branch2.GetMissing(branch1, a)
 		}
@@ -100,7 +101,7 @@ func main() {
 	go func() {
 		defer wg.Done()
 		archs := branch2.GetArchs()
-		PrintInfo("Search of missing and obsolete packages in branch " + args[1] + " is started")
+		PrintInfo("Searching of missing and obsolete packages in branch " + args[1] + "...")
 		for _, a := range archs {
 			d2.Missing[a] = branch1.GetMissing(branch2, a)
 			d2.OutOfDate[a] = branch1.GetOutOfDate(branch2, a)

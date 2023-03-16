@@ -74,7 +74,8 @@ Downloading of package list from branch p9 is started
 Downloading of package list from branch p10 is started
 Packages list from branch p10 is downloaded
 Packages list from branch p9 is downloaded
-Search of missing and obsolete packages in branch p9 is started
+Searching of missing packages in branch p10...
+Searching of missing and obsolete packages in branch p9...
 Search of missing packages in branch p10 is finished
 Search of missing and obsolete packages in branch p9 is finished
 [{"branch":"p10","missing":{"aarch64":[{"name":"python3-module-utmp","epoch":0,"version":"0.8","release":"alt1.1.1","arch":"aarch64","disttag":"sisyphus+2256
