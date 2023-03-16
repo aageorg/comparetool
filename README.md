@@ -1,7 +1,7 @@
-# Compare tool for altlinux packages
+# Compare tool for ALT Linux packages
 
 ## Dependencies
-The tool uses [go-version](http://github.com/hashicorp/go-version) library for parsing and comparing package versions.
+The tool uses [go-version](http://github.com/hashicorp/go-version) library for parsing and comparing package versions
 and [altclient](http://github.com/aageorg/altclient) for easy access to ALT Linux repository API
 
 ## Installation and Usage
